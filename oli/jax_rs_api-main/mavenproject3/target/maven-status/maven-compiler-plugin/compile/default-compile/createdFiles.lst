@@ -1,0 +1,10 @@
+com\mycompany\mavenproject3\entity\UserXRole.class
+controller\RolesResource.class
+controller\RoleResource.class
+com\mycompany\mavenproject3\entity\User.class
+controller\UserController.class
+service\UserService.class
+controller\RoleController.class
+service\RoleService.class
+com\mycompany\mavenproject3\entity\Role.class
+controller\ApplicationConfig.class
