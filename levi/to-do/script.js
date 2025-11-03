@@ -23,7 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
     async function markDone(id, div, btn) {
         await fetch('index.php', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ id })
         });
         div.classList.add('done');
