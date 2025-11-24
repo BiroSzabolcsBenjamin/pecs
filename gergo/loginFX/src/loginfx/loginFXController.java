@@ -46,18 +46,18 @@ public class loginFXController implements Initializable {
 
         if (name.isEmpty() && password.isEmpty() && date == null) {
             outputLabel.setText("Kérlek add meg az összes adatot!");
-        } else if (name.isEmpty()) {
-            outputLabel.setText("Kérlek adj meg egy nevet");
-        } else if (password.isEmpty()) {
-            outputLabel.setText("Kérlek adj meg egy jelszót!");
-        } else if (date == null) {
-            outputLabel.setText("Kérlek adj meg egy születési dátumot");
         } else if (name.isEmpty() && password.isEmpty()) {
             outputLabel.setText("Kérlek adj meg egy nevet és jelszót");
         } else if (name.isEmpty() && date == null) {
             outputLabel.setText("Kérlek adj meg egy nevet és születési dátumot");
         } else if (password.isEmpty() && date == null) {
             outputLabel.setText("Kérlek adj meg egy jelaszót egy és születési dátumot");
+        } else if (name.isEmpty()) {
+            outputLabel.setText("Kérlek adj meg egy nevet");
+        } else if (password.isEmpty()) {
+            outputLabel.setText("Kérlek adj meg egy jelszót!");
+        } else if (date == null) {
+            outputLabel.setText("Kérlek adj meg egy születési dátumot");
         } else {
             outputLabel.setText("Sikeresen regisztrált!\n" + name + "\n" + password + "\n" + date + "\n" + adomentes);
 

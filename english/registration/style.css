@@ -1,0 +1,13 @@
+.emptyInput {
+    border: 2px solid red;
+}
+
+.validInput {
+    border: 2px solid green;
+}
+
+input {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+}

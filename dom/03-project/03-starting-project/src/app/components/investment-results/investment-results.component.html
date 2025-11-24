@@ -1,0 +1,27 @@
+@if (results) {
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Year</th>
+          <th>Investment Value</th>
+          <th>Interest (Year)</th>
+          <th>Total Interest</th>
+          <th>Invested Capital</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        @for (item of results; track item.year) {
+          <tr>
+            <td>{{ item.year }}</td>
+            <td> $ {{ item.valueEndOfYear | number:'1.2-2'}}</td>
+            <td> $ {{ item.interest | number:'1.2-2'}}</td>
+            <td> $ {{ item.totalInterest | number:'1.2-2' }}</td>
+            <td> $ {{ item.totalAmountInvested | number:'1.2-2' }}</td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+}
