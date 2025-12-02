@@ -28,29 +28,48 @@ class Cat{
     static function getAllCats(){
         return [
             new Cat(
-                "Sanyi",
-                "Vörös",
-                "male",
-                "2022-04-20"
+                'Sanyi',
+                'Vörös',
+                'male',
+                '2022-04-20'
             ),
             new Cat(
-                "János",
-                "Fekete",
-                "male",
-                "2020-08-10"
+                'János',
+                'Fekete',
+                'male',
+                '2020-08-10'
             ),
             new Cat(
-                "Géza",
-                "Vörös",
-                "female",
-                "2021-01-28"
+                'Géza',
+                'Vörös',
+                'female',
+                '2021-01-28'
             ),
             new Cat(
-                "Béla",
-                "Barna",
-                "male",
-                "2015-05-20"
+                'Béla',
+                'Barna',
+                'male',
+                '2015-05-20'
             ),
         ];
     }
+
+    static function getCatAgeFromBirthDate(Cat $cat){
+        return date_diff(new DateTime() , new DateTime($cat->getBirthDate()))->y;
+    }
+
+    function getAgeFromBirthDate(){
+        return date_diff(new DateTime() , new DateTime($this->birthDate))->y;
+    }
 }
+/*
+echo Cat::getCatAgeFromBirthDate(Cat::getAllCats()[0]);
+
+
+$sanyi = Cat::getAllCats()[0];
+$janos = Cat::getAllCats()[1];
+
+echo $janos->getAgeFromBirthDate();
+*/
+
+?>

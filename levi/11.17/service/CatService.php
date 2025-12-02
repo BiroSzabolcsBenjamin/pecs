@@ -18,19 +18,18 @@ class CatService {
         }
         return $result;
     }
+    /*
+    static function getCatsByGender(string $gender){
+        $cats = Cat::getAllCats();
 
-    static function getCatsByGender($gender){
-        $allCats = Cat::getAllCats();
+        $catsByGender = [];
 
-        foreach($allCats as $cat){
+        foreach($cats as $cat){
             if($cat->getGender() == $gender){
-                $result[] = [
-                    "name" => $cat->getName(),
-                    "color" => $cat->getColor(),
-                    "birthDate" => $cat->getBirthDate(),
-                ];
+                $catsByGender[] = $cat;
             }
         }
-        return $result;
+        return $catsByGender;
     }
+    */
 }

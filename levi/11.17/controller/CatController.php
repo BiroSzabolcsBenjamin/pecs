@@ -4,7 +4,9 @@ include '../service/CatService.php';
 
 
 class CatController{
-    static function getAllCats(){
+    static function getCtasByGender(){
+        
+
         try{
             $gender = $_GET['gender'];
             $response = CatService::getAllCats($gender);
@@ -15,7 +17,7 @@ class CatController{
             echo $e -> getMessage();
         }
     }
-
+    /*  
     static function getCatsByGender($gender){
         try{
             $response = CatService::getCatsByGender($gender);
@@ -23,9 +25,14 @@ class CatController{
         } catch(Exception $e){
             echo $e -> getMessage();
         }
+        echo json_encode($response);
     }
+    */
 }
 
+/*
+$gender = $_GET['gender];
+CatController::getCatsByGender($gender);
 
 header("Content-Type: application/json");
 
@@ -34,3 +41,4 @@ if (isset($_GET['gender'])) {
 } else {
     CatController::getAllCats();    
 }
+*/

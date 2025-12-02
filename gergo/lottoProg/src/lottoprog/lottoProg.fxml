@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="355.0" prefWidth="567.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/24.0.1" fx:controller="lottoprog.lottoProgController">
+    <children>
+        <Button fx:id="sorsolasBtn" layoutX="251.0" layoutY="246.0" onAction="#handleButtonAction" text="Sorsolás" />
+        <Label fx:id="firstNum" layoutX="81.0" layoutY="198.0" minHeight="16" minWidth="69" />
+      <TextField fx:id="numOne" layoutX="81.0" layoutY="153.0" prefHeight="25.0" prefWidth="69.0" />
+      <TextField fx:id="numTwo" layoutX="161.0" layoutY="153.0" prefHeight="25.0" prefWidth="69.0" />
+      <TextField fx:id="numThree" layoutX="247.0" layoutY="153.0" prefHeight="25.0" prefWidth="69.0" />
+      <TextField fx:id="numFour" layoutX="327.0" layoutY="153.0" prefHeight="25.0" prefWidth="69.0" />
+      <TextField fx:id="numFive" layoutX="406.0" layoutY="153.0" prefHeight="25.0" prefWidth="69.0" />
+      <Label fx:id="secondNum" layoutX="161.0" layoutY="198.0" minHeight="16" minWidth="69" />
+      <Label fx:id="thirdNum" layoutX="249.0" layoutY="198.0" minHeight="16" minWidth="69" />
+      <Label fx:id="fourthNum" layoutX="327.0" layoutY="198.0" minHeight="16" minWidth="69" />
+      <Label fx:id="fifthNum" layoutX="406.0" layoutY="198.0" minHeight="16" minWidth="69" />
+      <Label fx:id="label2" layoutX="249.0" layoutY="51.0" minHeight="16" minWidth="69" text="Lotto" textAlignment="CENTER" />
+      <Label fx:id="label21" layoutX="188.0" layoutY="98.0" minHeight="16" minWidth="69" prefHeight="17.0" prefWidth="186.0" text="Írj be egy számot 1-90-ig" textAlignment="CENTER" />
+      <Label fx:id="talalatOut" layoutX="75.0" layoutY="285.0" minHeight="16" minWidth="69" />
+      <Label fx:id="resultOut" layoutX="327.0" layoutY="294.0" minHeight="16" minWidth="69" />
+    </children>
+</AnchorPane>
