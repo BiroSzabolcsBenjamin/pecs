@@ -19,6 +19,8 @@ export class UserPlacesComponent implements OnInit {
   error = signal('');
   private httpClient = inject(HttpClient);
 
+  private userP
+
 
   ngOnInit(): void {
     this.isLoading.set(true);
@@ -39,5 +41,11 @@ export class UserPlacesComponent implements OnInit {
           this.error.set('Something went wrong fetching your fav places!');
         },
       });
+  }
+
+  onRemovePlace(removePlace: Place){
+    this.placesService.removeUserPlace(removePlace).subscribe({
+      next: (res) => console.log(res)
+    });
   }
 }
